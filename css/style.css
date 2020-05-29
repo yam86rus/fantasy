@@ -1,0 +1,62 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+*, *::after, *::before {
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.header__items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+
+.header__item {
+  width: 33.33333%;
+  display: flex;
+  justify-content: flex-end; }
+
+.header__item--center {
+  justify-content: center; }
+
+.header__item-logo {
+  display: block;
+  margin: 0 auto; }
+
+.header__title {
+  font-family: 'Marck Script', cursive;
+  font-size: 25px;
+  color: #e51a4b; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .nav__link {
+    font-family: 'Marck Script', cursive;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 25px;
+    border-radius: 5px;
+    background: linear-gradient(#e51a498c, #e51a4b);
+    color: #fff;
+    position: relative; }
+    .nav__link:hover {
+      background: linear-gradient(#c2a062, #e51a4b); }
+
+.social__icon {
+  width: 50px;
+  height: 50px;
+  fill: #e51a4b;
+  margin: 0 5px;
+  transition: fill .2s linear; }
+  .social__icon:last-child {
+    margin-right: 0; }
+  .social__icon:hover {
+    fill: #e51a498c; }
+
+.sandbox {
+  margin-top: 100px; }

@@ -1,0 +1,84 @@
+h1, h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// === Header ===
+
+
+.header{
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    &__item{
+        width: 33.33333%;
+        display: flex;
+        justify-content: flex-end;
+    }
+        &__item--center{
+            justify-content: center;
+    }
+    &__item-logo{
+        display: block;
+        margin: 0 auto;
+    }
+    &__title{
+        font-family: 'Marck Script', cursive;
+        font-size: 25px;
+        color: $accent;
+        
+    }
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__link{
+        font-family: 'Marck Script', cursive;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 5px 25px;
+        border-radius: 5px;
+        background: linear-gradient($accent-light,$accent);    
+        color: #fff;
+        position: relative;
+        
+        &:hover{
+            background: linear-gradient(#c2a062,$accent);
+        }
+        
+    }
+}
+
+.social__icon{
+    width: 50px;
+    height: 50px;
+    fill: $accent;
+    margin: 0 5px;
+
+    transition: fill .2s linear;
+    &:last-child{
+        margin-right: 0;
+    }
+    &:hover{
+        fill: $accent-light;
+    }
+}
+
+// === /header ===
+
+.sandbox{
+    margin-top: 100px;
+}
